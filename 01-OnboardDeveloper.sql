@@ -13,18 +13,21 @@ GO
 
 -- link to repo
 -- 
+
+
 USE CreditSuisseDev
 GO
 SELECT * FROM dbo.Articles AS a
 GO
 
 
--- Need data
--- Data Generator
+-- I need data
+
+-- Let's use SQL Data Generator
 -- Open file from repo
 -- change connection string
 -- generate data
-
+-- C:\Program Files (x86)\Red Gate\SQL Data Generator 4\Config
 
 -- check data
 SELECT comments, *
@@ -35,3 +38,10 @@ FROM dbo.CountryCodes AS cc;
 GO
 SELECT * FROM dbo.Status AS s
 GO
+
+
+/**************************************************************
+
+                          End Demo
+
+***************************************************************/ 

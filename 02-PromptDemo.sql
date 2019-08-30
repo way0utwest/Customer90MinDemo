@@ -4,7 +4,7 @@ SQL Prompt Demo - Writing Code
 Database: SimpleTalkDev
 Copyright 2019 Redgate Software
 */
-USE CreditSuisseDev
+USE CreditSuisseDev;
 GO
 
 
@@ -22,17 +22,17 @@ Lastly, format
 
 
 
+
 /**************************************************************************************
 Demo - Writing new code, let's build a query.
 
-ssf Articles, use cs_art snippet
+ssf tab, use cs_art snippet
 add join to ArticlePayment 
 where a.publishdate < sysdatetime()
 Use column picker again
-See Prompt table schema option for fixing articlepayment schema name missing
+See Prompt table schema option for fixing contacts alias missing
 Qualify Object Names - CTRL+B,Q
 **************************************************************************************/
-
 
 
 
@@ -45,6 +45,7 @@ Qualify Object Names - CTRL+B,Q
 Demo - Fix Snippet
 goto Snippet Manager
 add schema.
+Show the repo for snippets
 **************************************************************************************/
 
 
@@ -63,10 +64,18 @@ add schema.
 Demo - Adding data to RSS
 Create a snippet
 **************************************************************************************/
-SELECT top 100
- *
- FROM dbo.RSSFeeds as rf
- ORDER BY  rf.ModifiedDate desc 
+SELECT TOP 10
+       *
+FROM dbo.RSSFeeds AS rf
+ORDER BY rf.ModifiedDate DESC;
+GO
+-- insert data with snippet
+
+GO
+SELECT TOP 10
+       *
+FROM dbo.RSSFeeds AS rf
+ORDER BY rf.ModifiedDate DESC;
 GO
 
 
@@ -80,6 +89,9 @@ AP GetLatest
 
 
 
+-----------------------------
+-- COMMIT code
+-----------------------------
 
 
 
@@ -88,22 +100,26 @@ AP GetLatest
 
 
 
-
--- ??
+-----------------------------
 -- Create a new table
 -- ctcustom - Question table
+-----------------------------
+
+
+-----------------------------
+-- create procedure
+-----------------------------
 
 
 
 
 
-
-
-
+-----------------------------
 -- check changes in
+-----------------------------
 
 /**************************************************************
 
                           End Demo
 
-***************************************************************/ 
+***************************************************************/

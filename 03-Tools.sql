@@ -10,6 +10,7 @@ Copyright 2019 Redgate Software
 
 
 
+
 -- What else might be affected here?
 -- Run Dependency Tracker
 -- from SOC tab, launch SDG with creditsuisse
@@ -37,6 +38,7 @@ GO
 
 
 
+
 -- From SOC, launch SQL Doc
 -- check out docs on article
 -- add some MS_Descriptions
@@ -44,7 +46,8 @@ GO
 
 
 
-
+-- capture static data
+-- rssfeeds
 
 /*
 End Demo
