@@ -8,6 +8,8 @@ USE master
 GO
 CREATE DATABASE CreditSuisseDev
 GO
+ALTER DATABASE CreditSuisseDev SET TRUSTWORTHY ON
+GO
 
 -- link to repo
 -- 
@@ -25,7 +27,7 @@ GO
 
 
 -- check data
-SELECT *
+SELECT comments, *
 FROM dbo.Articles AS a;
 GO
 SELECT *

@@ -9,7 +9,7 @@ GO
 
 
 /**************************************************************************************
-Demo - Alter procedure GetLatest - Need to add a parameter for TOP
+Demo - Alter procedure GetLatestBlogForAuthor - Need to add a parameter for TOP
 
 Let's add the parameter
 Notice the ca marker. Let's click the lightbulb and add ob.
@@ -17,7 +17,6 @@ Still an issue, let's fix the SELECT *. What do add?
 We can get the table definition, but we want to just pick columns.
 Lastly, format
 **************************************************************************************/
-
 
 
 
@@ -33,7 +32,6 @@ Use column picker again
 See Prompt table schema option for fixing articlepayment schema name missing
 Qualify Object Names - CTRL+B,Q
 **************************************************************************************/
-
 
 
 
@@ -65,10 +63,11 @@ add schema.
 Demo - Adding data to RSS
 Create a snippet
 **************************************************************************************/
-
-
-
-
+SELECT top 100
+ *
+ FROM dbo.RSSFeeds as rf
+ ORDER BY  rf.ModifiedDate desc 
+GO
 
 
 
@@ -82,10 +81,26 @@ AP GetLatest
 
 
 
+
+
+
+
+
+
+
+
 -- ??
 -- Create a new table
 -- ctcustom - Question table
 
+
+
+
+
+
+
+
+-- check changes in
 
 /**************************************************************
 
