@@ -4,18 +4,20 @@ Onboarding a Developer
 Database: SimpleTalk_Dev
 Copyright 2019 Redgate Software
 */
+
+
 USE master
 GO
-CREATE DATABASE CreditSuisseDev
+CREATE DATABASE CustomerDemo
 GO
-ALTER DATABASE CreditSuisseDev SET TRUSTWORTHY ON
+ALTER DATABASE CustomerDemo SET TRUSTWORTHY ON
 GO
 
--- link to repo
--- 
+-- link to repo for SimpleTalk. Use SQL Source Control to link to the ToolBeltDemo repo.
+-- git clone https://github.com/way0utwest/ToolBeltToolDemo
 
 
-USE CreditSuisseDev
+USE CustomerDemo
 GO
 SELECT * FROM dbo.Articles AS a
 GO
@@ -25,7 +27,7 @@ GO
 
 -- Let's use SQL Data Generator
 -- Open file from repo
--- change connection string
+-- change connection string (Edit Project)
 -- generate data
 -- C:\Program Files (x86)\Red Gate\SQL Data Generator 4\Config
 

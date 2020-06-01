@@ -4,7 +4,7 @@ SQL Prompt Demo - Writing Code
 Database: SimpleTalkDev
 Copyright 2019 Redgate Software
 */
-USE CreditSuisseDev;
+USE CustomerDemo;
 GO
 
 
